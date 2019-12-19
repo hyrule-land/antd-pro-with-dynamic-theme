@@ -1,6 +1,15 @@
-import React from 'react';
-// import { Icon, Modal } from 'antd';
+import React, { Component } from 'react';
+import ColorPicker from '@/components/ColorPicker/';
 
-const Demo = () => <div>this is demo page</div>;
+// eslint-disable-next-line react/prefer-stateless-function
+class Demo extends Component {
+  render() {
+    return (
+      <div>
+        <ColorPicker />
+      </div>
+    );
+  }
+}
 
 export default Demo;

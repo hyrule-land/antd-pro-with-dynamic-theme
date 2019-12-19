@@ -107,7 +107,7 @@ export default {
               path: '/demo',
               name: 'demo',
               icon: 'smile',
-              component: './demo/'
+              component: './demo/',
             },
             {
               path: '/admin',

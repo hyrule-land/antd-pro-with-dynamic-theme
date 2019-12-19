@@ -1366,7 +1366,6 @@ this.tinycolor = tinycolor;
 @yellow-1: color(~`colorPalette('@{yellow-6}', 1) `);
 @yellow-2: color(~`colorPalette('@{yellow-6}', 2) `);
 @yellow-3: color(~`colorPalette('@{yellow-6}', 3) `);
-
 @yellow-4: color(~`colorPalette('@{yellow-6}', 4) `);
 @yellow-5: color(~`colorPalette('@{yellow-6}', 5) `);
 @yellow-6: #fadb14;
@@ -1515,7 +1514,8 @@ this.tinycolor = tinycolor;
 @ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
 @ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
 // Border color
-@border-color-base: hsv(0, 0, 85%); // base border outline a component
+@border-color-base: hsv(0, 0, 85%);
+// base border outline a component
 @border-color-split: hsv(0, 0, 91%); // split border inside a component
 @border-color-inverse: @white;
 @border-width-base: 1px; // width of the border for a component
@@ -1586,7 +1586,6 @@ this.tinycolor = tinycolor;
 // Empty
 @empty-font-size: @font-size-base;
 // Radio
-
 @radio-size: 16px;
 @radio-dot-color: @primary-color;
 // Radio buttons
@@ -1655,11 +1654,11 @@ this.tinycolor = tinycolor;
 @zindex-dropdown: 1050;
 @zindex-picker: 1050;
 @zindex-tooltip: 1060;
-
 // Animation
 @animation-duration-slow: 0.3s; // Modal
 @animation-duration-base: 0.2s;
-@animation-duration-fast: 0.1s; // Tooltip
+@animation-duration-fast: 0.1s;
+// Tooltip
 //CollapsePanel
 @collapse-panel-border-radius: @border-radius-base;
 //Dropdown
@@ -1823,7 +1822,6 @@ this.tinycolor = tinycolor;
 @carousel-dot-width: 16px;
 @carousel-dot-height: 3px;
 @carousel-dot-active-width: 24px;
-
 // Badge
 // ---
 @badge-height: 20px;
@@ -1838,6 +1836,7 @@ this.tinycolor = tinycolor;
 @rate-star-bg: @border-color-split;
 // Card
 // ---
+
 @card-head-color: @heading-color;
 @card-head-background: transparent;
 @card-head-padding: 16px;
@@ -1857,6 +1856,7 @@ this.tinycolor = tinycolor;
 @comment-author-name-color: @text-color-secondary;
 @comment-author-time-color: #ccc;
 @comment-action-color: @text-color-secondary;
+
 @comment-action-hover-color: #595959;
 // Tabs
 // ---
@@ -1874,6 +1874,7 @@ this.tinycolor = tinycolor;
 @tabs-horizontal-padding-sm: 8px 16px;
 @tabs-vertical-padding: 8px 24px;
 @tabs-vertical-margin: 0 0 16px 0;
+
 @tabs-scrolling-size: 32px;
 @tabs-highlight-color: @primary-color;
 @tabs-hover-color: @primary-5;
@@ -1881,6 +1882,7 @@ this.tinycolor = tinycolor;
 @tabs-card-gutter: 2px;
 @tabs-card-tab-active-border-top: 2px solid transparent;
 // BackTop
+
 // ---
 @back-top-color: #fff;
 @back-top-bg: @text-color-secondary;
@@ -1949,7 +1951,6 @@ this.tinycolor = tinycolor;
 // Tree
 // ---
 @tree-title-height: 24px;
-
 @tree-child-padding: 18px;
 @tree-directory-selected-color: #fff;
 @tree-directory-selected-bg: @primary-color;
@@ -2016,6 +2017,7 @@ this.tinycolor = tinycolor;
 @timeline-dot-border-width: 2px;
 @timeline-dot-color: @primary-color;
 @timeline-dot-bg: @component-background;
+
 // Typography
 // ---
 @typography-title-font-weight: 600;
@@ -2040,8 +2042,7 @@ this.tinycolor = tinycolor;
   // Internet Explorer 10+
   &:-ms-input-placeholder {
     color: @color;
-  }
-  // Safari and Chrome
+  } // Safari and Chrome
   &::-webkit-input-placeholder {
     color: @color;
   }
@@ -2183,10 +2184,12 @@ input::-ms-reveal {
 *,
 *::before,
 *::after {
-  box-sizing: border-box; // 1
+  box-sizing: border-box;
+  // 1
 }
 @{html-selector} {
-  font-family: sans-serif; // 2
+  font-family: sans-serif;
+  // 2
   line-height: 1.15;
   // 3
   -webkit-text-size-adjust: 100%; // 4
@@ -2195,7 +2198,6 @@ input::-ms-reveal {
   -ms-overflow-style: scrollbar; // 5
   -webkit-tap-highlight-color: fade(@black, 0%); // 6
 }
-
 // IE10+ doesn't honor `<meta name="viewport">` in some cases.
 @-ms-viewport {
   width: device-width;
@@ -2241,7 +2243,8 @@ body {
 // 1. Add the correct box sizing in Firefox.
 // 2. Show the overflow in Edge and IE.
 hr {
-  box-sizing: content-box; // 1
+  box-sizing: content-box;
+  // 1
   height: 0; // 1
   overflow: visible; // 2
 }
@@ -2311,7 +2314,6 @@ ul ol {
 dt {
   font-weight: 500;
 }
-
 dd {
   margin-bottom: 0.5em;
   margin-left: 0; // Undo browser default
@@ -2375,7 +2377,6 @@ a {
     pointer-events: none;
   }
 }
-
 //
 // Code
 //
@@ -2521,7 +2522,8 @@ legend {
   color: inherit; // 2
   font-size: 1.5em;
   line-height: inherit;
-  white-space: normal; // 1
+  white-space: normal;
+  // 1
 }
 progress {
   vertical-align: baseline; // Add the correct vertical alignment in Chrome, Firefox, and Opera.
@@ -2787,7 +2789,6 @@ html {
 .slide-motion(slide-up, antSlideUp);
 .slide-motion(slide-down, antSlideDown);
 .slide-motion(slide-left, antSlideLeft);
-
 .slide-motion(slide-right, antSlideRight);
 @keyframes antSlideUpIn {
   0% {
@@ -3313,7 +3314,6 @@ html {
   padding: @input-padding-vertical-lg @input-padding-horizontal-lg;
   font-size: @font-size-lg;
 }
-
 .input-sm() {
   height: @input-height-sm;
   padding: @input-padding-vertical-sm @input-padding-horizontal-sm;
@@ -3391,7 +3391,8 @@ html {
   display: table;
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0; // Undo padding and float of grid classes
+  border-spacing: 0;
+  // Undo padding and float of grid classes
   &[class*='col-'] {
     float: none;
     padding-right: 0;
@@ -3468,8 +3469,7 @@ html {
       left: 0;
       content: '';
     }
-  }
-  // Reset rounded corners
+  } // Reset rounded corners
   > .@{inputClass}:first-child,
   &-addon:first-child {
     border-top-right-radius: 0;
@@ -3503,8 +3503,7 @@ html {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
-  }
-  // Sizing options
+  } // Sizing options
   &-lg .@{inputClass},
   &-lg > &-addon {
     .input-lg();
@@ -3590,8 +3589,7 @@ html {
       border-right-width: @border-width-base;
       border-top-right-radius: @border-radius-base;
       border-bottom-right-radius: @border-radius-base;
-    }
-    // https://github.com/ant-design/ant-design/issues/12493
+    } // https://github.com/ant-design/ant-design/issues/12493
     & > .@{ant-prefix}-select-auto-complete .@{ant-prefix}-input {
       vertical-align: top;
     }
@@ -3755,7 +3753,6 @@ html {
     object-fit: cover;
   }
 }
-
 .avatar-size(@size, @font-size) {
   width: @size;
   height: @size;
@@ -3979,7 +3976,6 @@ html {
     opacity: 0;
   }
 }
-
 @breadcrumb-prefix-cls: ~'@{ant-prefix}-breadcrumb';
 .@{breadcrumb-prefix-cls} {
   .reset-component;
@@ -4104,8 +4100,7 @@ html {
 .button-color(@color; @background; @border) {
   color: @color;
   background-color: @background;
-  border-color: @border;
-  // a inside Button which only work in Chrome // http://stackoverflow.com/a/17253457
+  border-color: @border; // a inside Button which only work in Chrome // http://stackoverflow.com/a/17253457
   > a:only-child {
     color: currentColor;
     &::after {
@@ -4224,13 +4219,11 @@ html {
 .btn-ghost() {
   .button-variant-other(@btn-ghost-color, @btn-ghost-bg, @btn-ghost-border);
 }
-
 // dashed button style
 .btn-dashed() {
   .button-variant-other(@btn-default-color, @btn-default-bg, @btn-default-border);
   border-style: dashed;
 }
-
 // danger button style
 .btn-danger() {
   .button-variant-primary(@btn-danger-color, @btn-danger-bg);
@@ -4254,7 +4247,6 @@ html {
       @btn-circle-size-lg; 0 @btn-circle-size-lg / 2; @btn-font-size-lg; @btn-circle-size-lg
     );
   }
-
   &.@{btnClassName}-sm {
     .button-size(
       @btn-circle-size-sm; 0 @btn-circle-size-sm / 2; @font-size-base; @btn-circle-size-sm
@@ -4319,7 +4311,6 @@ html {
   > span:only-child > .@{btnClassName} {
     border-radius: @btn-border-radius-base;
   }
-
   > .@{btnClassName}:first-child:not(:last-child),
   > span:first-child:not(:last-child) > .@{btnClassName} {
     border-top-left-radius: @btn-border-radius-base;
@@ -4420,7 +4411,6 @@ html {
   &-danger {
     .btn-danger;
   }
-
   &-link {
     .btn-link;
   }
@@ -4489,7 +4479,8 @@ html {
   &:focus > span,
   &:active > span {
     position: relative;
-  } // To ensure that a space will be placed between character and `Icon`.
+  }
+  // To ensure that a space will be placed between character and `Icon`.
   > .@{iconfont-css-prefix} + span,
   > span + .@{iconfont-css-prefix} {
     margin-left: 8px;
@@ -4544,7 +4535,6 @@ a.@{btn-prefix-cls} {
   outline: none;
   .@{ant-prefix}-select&-year-select {
     min-width: 90px;
-
     &.@{ant-prefix}-select-sm {
       min-width: 70px;
     }
@@ -4576,7 +4566,6 @@ a.@{btn-prefix-cls} {
     position: relative;
     outline: none;
   }
-
   &-calendar-body {
     padding: 8px 12px;
   }
@@ -4585,7 +4574,6 @@ a.@{btn-prefix-cls} {
     max-width: 100%;
     height: 256px;
     background-color: transparent;
-
     border-collapse: collapse;
   }
   table,
@@ -4675,7 +4663,6 @@ a.@{btn-prefix-cls} {
     left: 0;
     width: 100%;
   }
-
   &-fullscreen {
     border-top: 0;
   }
@@ -4688,7 +4675,6 @@ a.@{btn-prefix-cls} {
     }
     label.@{ant-prefix}-radio-button {
       height: @input-height-base;
-
       line-height: @input-height-base - 2px;
     }
   }
@@ -5011,6 +4997,7 @@ a.@{btn-prefix-cls} {
     padding: @card-padding-base-sm;
   }
 }
+
 .@{ant-prefix}-carousel {
   .reset-component;
   .slick-slider {
@@ -5225,9 +5212,7 @@ a.@{btn-prefix-cls} {
     position: static;
     width: 100%;
     // https://github.com/ant-design/ant-design/issues/17582
-    padding-right: 24px;
-    // Add important to fix https://github.com/ant-design/ant-design/issues/5078
-    // because input.less will compile after cascader.less
+    padding-right: 24px; // Add important to fix https://github.com/ant-design/ant-design/issues/5078 // because input.less will compile after cascader.less
     background-color: transparent !important;
     cursor: pointer;
   }
@@ -5417,7 +5402,8 @@ a.@{btn-prefix-cls} {
   }
 }
 .antCheckboxFn(@checkbox-prefix-cls: ~'@{ant-prefix}-checkbox') {
-  @checkbox-inner-prefix-cls: ~'@{checkbox-prefix-cls}-inner'; // 一般状态
+  @checkbox-inner-prefix-cls: ~'@{checkbox-prefix-cls}-inner';
+  // 一般状态
   .@{checkbox-prefix-cls} {
     .reset-component;
     position: relative;
@@ -5540,7 +5526,6 @@ a.@{btn-prefix-cls} {
       visibility: hidden;
     }
   }
-
   .@{checkbox-prefix-cls}-wrapper {
     .reset-component;
     display: inline-block;
@@ -5811,12 +5796,10 @@ a.@{btn-prefix-cls} {
   &.slide-up-appear.slide-up-appear-active&-placement-bottomRight {
     animation-name: antSlideUpIn;
   }
-
   &.slide-up-leave.slide-up-leave-active&-placement-topLeft,
   &.slide-up-leave.slide-up-leave-active&-placement-topRight {
     animation-name: antSlideDownOut;
   }
-
   &.slide-up-leave.slide-up-leave-active&-placement-bottomLeft,
   &.slide-up-leave.slide-up-leave-active&-placement-bottomRight {
     animation-name: antSlideUpOut;
@@ -5835,7 +5818,6 @@ a.@{btn-prefix-cls} {
       line-height: @line-height-base;
     }
   }
-
   &-input.@{ant-prefix}-input-sm {
     padding-top: 0;
     padding-bottom: 0;
@@ -6038,7 +6020,6 @@ a.@{btn-prefix-cls} {
     cursor: auto;
     .placeholder;
   }
-
   &-week-number {
     width: 286px;
     &-cell {
@@ -6082,7 +6063,6 @@ a.@{btn-prefix-cls} {
       display: none;
     }
   }
-
   &-cell {
     height: 30px;
     padding: 3px 0;
@@ -6164,7 +6144,6 @@ a.@{btn-prefix-cls} {
       height: 24px;
       border: @border-width-base @border-style-base @disabled-color;
       border-radius: @border-radius-sm;
-
       content: ' ';
     }
   }
@@ -6405,7 +6384,6 @@ a.@{btn-prefix-cls} {
     &-header {
       border-bottom: 0;
     }
-
     &-body {
       border-top: @border-width-base @border-style-base @border-color-split;
     }
@@ -6482,7 +6460,6 @@ a.@{btn-prefix-cls} {
   &-combobox {
     width: 100%;
   }
-
   &-column-1,
   &-column-1 &-select {
     width: 100%;
@@ -6509,7 +6486,6 @@ a.@{btn-prefix-cls} {
     &:hover {
       overflow-y: auto;
     }
-
     &:first-child {
       margin-left: 0;
       border-left: 0;
@@ -6712,7 +6688,6 @@ a.@{btn-prefix-cls} {
   color: @text-color;
   line-height: 24px;
   text-align: center;
-
   background: transparent;
   border-radius: @border-radius-sm;
   transition: background 0.3s ease;
@@ -6749,7 +6724,6 @@ a.@{btn-prefix-cls} {
   border-radius: @border-radius-base;
   outline: none;
 }
-
 .@{calendar-prefix-cls}-decade-panel-hidden {
   display: none;
 }
@@ -6785,7 +6759,6 @@ a.@{btn-prefix-cls} {
   line-height: 24px;
   text-align: center;
   background: transparent;
-
   border-radius: @border-radius-sm;
   transition: background 0.3s ease;
   &:hover {
@@ -6861,7 +6834,6 @@ a.@{btn-prefix-cls} {
       table-layout: fixed;
     }
   }
-
   &-row {
     > th,
     > td {
@@ -7008,7 +6980,6 @@ a.@{btn-prefix-cls} {
       content: '';
     }
   }
-
   &-horizontal&-with-text-left,
   &-horizontal&-with-text-right {
     .@{divider-prefix-cls}-inner-text {
@@ -7016,7 +6987,6 @@ a.@{btn-prefix-cls} {
       padding: 0 10px;
     }
   }
-
   &-horizontal&-with-text-left {
     &::before {
       top: 50%;
@@ -7090,7 +7060,6 @@ a.@{btn-prefix-cls} {
     .@{drawer-prefix-cls}-content-wrapper {
       height: 100%;
     }
-
     &.@{drawer-prefix-cls}-open {
       width: 100%;
       transition: transform @animation-duration-slow @ease-base-out;
@@ -7225,7 +7194,6 @@ a.@{btn-prefix-cls} {
     border-bottom: @border-width-base @border-style-base @border-color-split;
     border-radius: @border-radius-base @border-radius-base 0 0;
   }
-
   &-header-no-title {
     color: @text-color;
     background: @component-background;
@@ -7401,7 +7369,6 @@ a.@{btn-prefix-cls} {
       }
     }
   }
-
   &.slide-down-enter.slide-down-enter-active&-placement-bottomLeft,
   &.slide-down-appear.slide-down-appear-active&-placement-bottomLeft,
   &.slide-down-enter.slide-down-enter-active&-placement-bottomCenter,
@@ -7435,7 +7402,6 @@ a.@{btn-prefix-cls} {
     .iconfont-size-under-12px(10px);
   }
 }
-
 .@{dropdown-prefix-cls}-button {
   white-space: nowrap;
   &.@{ant-prefix}-btn-group > .@{ant-prefix}-btn:last-child:not(:first-child) {
@@ -7496,7 +7462,6 @@ a.@{btn-prefix-cls} {
   &-footer {
     margin-top: 16px;
   }
-
   // antd internal empty style
   &-normal {
     margin: 32px 0;
@@ -7569,7 +7534,6 @@ a.@{btn-prefix-cls} {
   .@{ant-prefix}-col@{class}-push-@{index} {
     left: percentage((@index / @grid-columns));
   }
-
   .@{ant-prefix}-col@{class}-pull-@{index} {
     right: percentage((@index / @grid-columns));
   }
@@ -7579,7 +7543,6 @@ a.@{btn-prefix-cls} {
   .@{ant-prefix}-col@{class}-order-@{index} {
     order: @index;
   }
-
   .loop-grid-columns((@index - 1), @class);
 }
 .loop-grid-columns(@index, @class) when (@index = 0) {
@@ -7630,7 +7593,8 @@ a.@{btn-prefix-cls} {
   }
   .@{ant-prefix}-calendar-picker-open .@{ant-prefix}-calendar-picker-input {
     .active(@border-color);
-  } // Input prefix
+  }
+  // Input prefix
   .@{ant-prefix}-input-affix-wrapper {
     .@{ant-prefix}-input {
       &,
@@ -7716,7 +7680,6 @@ a.@{btn-prefix-cls} {
 }
 @form-prefix-cls: ~'@{ant-prefix}-form';
 @form-component-height: @input-height-base;
-
 @form-component-max-height: @input-height-lg;
 @form-feedback-icon-size: @font-size-base;
 @form-help-margin-top: (@form-component-height - @form-component-max-height) / 2 + 2px;
@@ -7811,7 +7774,6 @@ a.@{btn-prefix-cls} {
 .@{form-prefix-cls}-explain {
   margin-bottom: -@form-explain-precision;
 }
-
 .@{form-prefix-cls}-extra {
   padding-top: 4px;
 }
@@ -7830,7 +7792,8 @@ form {
     }
     .@{ant-prefix}-input-password-icon {
       margin-right: 18px;
-    } // Fix overlapping between feedback icon and <Select>'s arrow. // https://github.com/ant-design/ant-design/issues/4431
+    }
+    // Fix overlapping between feedback icon and <Select>'s arrow. // https://github.com/ant-design/ant-design/issues/4431
     > .@{ant-prefix}-select .@{ant-prefix}-select-arrow,
     > .@{ant-prefix}-select .@{ant-prefix}-select-selection__clear,
     :not(.@{ant-prefix}-input-group-addon) > .@{ant-prefix}-select .@{ant-prefix}-select-arrow,
@@ -7870,8 +7833,7 @@ form {
   textarea.@{ant-prefix}-input {
     height: auto;
     margin-bottom: 4px;
-  }
-  // input[type=file]
+  } // input[type=file]
   .@{ant-prefix}-upload {
     background: transparent;
   }
@@ -7905,7 +7867,8 @@ form {
       margin-left: 8px;
     }
     &-handler-wrap {
-      z-index: 2; // https://github.com/ant-design/ant-design/issues/6289
+      z-index: 2;
+      // https://github.com/ant-design/ant-design/issues/6289
     }
   }
   .@{ant-prefix}-select,
@@ -7968,6 +7931,7 @@ form {
   }
   .@{form-prefix-cls}-extra {
     margin-top: 2px;
+
     margin-bottom: -4px;
   }
 }
@@ -8093,7 +8057,6 @@ form {
       border-color: @warning-color;
     }
   }
-
   .@{ant-prefix}-cascader-picker:focus .@{ant-prefix}-cascader-input {
     .active(@warning-color);
   }
@@ -8117,6 +8080,7 @@ form {
       .active(@error-color);
     }
   }
+
   .@{ant-prefix}-select.@{ant-prefix}-select-auto-complete {
     .@{ant-prefix}-input:focus {
       border-color: @error-color;
@@ -8135,7 +8099,8 @@ form {
   .@{ant-prefix}-select-arrow,
   .@{ant-prefix}-cascader-picker-arrow {
     color: @error-color;
-  } //input-number, timepicker
+  }
+  //input-number, timepicker
   .@{ant-prefix}-input-number,
   .@{ant-prefix}-time-picker-input {
     border-color: @error-color;
@@ -8380,7 +8345,6 @@ form {
   &:hover {
     color: @text-color-secondary;
   }
-
   &:active {
     color: @text-color;
   }
@@ -8512,8 +8476,7 @@ form {
     border-left: @border-width-base @border-style-base @input-number-handler-border-color;
     border-radius: 0 @border-radius-base @border-radius-base 0;
     opacity: 0;
-    transition: opacity 0.24s linear 0.1s;
-    // Fix input number inside Menu makes icon too large
+    transition: opacity 0.24s linear 0.1s; // Fix input number inside Menu makes icon too large
     // We arise the selector priority by nest selector here
     // https://github.com/ant-design/ant-design/issues/14367
     .@{input-number-prefix-cls}-handler {
@@ -8650,7 +8613,6 @@ form {
         line-height: @layout-zero-trigger-height;
         text-align: center;
         background: @layout-sider-background;
-
         border-radius: 0 @border-radius-base @border-radius-base 0;
         cursor: pointer;
         transition: background 0.3s ease;
@@ -8860,8 +8822,7 @@ form {
   } // ============================ without flex ============================
   &-item-no-flex {
     display: block;
-  }
-  // Horizontal
+  } // Horizontal
   &:not(.@{list-prefix-cls}-vertical) {
     .@{list-prefix-cls}-item-no-flex {
       .@{list-prefix-cls}-item-action {
@@ -8889,7 +8850,6 @@ form {
   .@{list-prefix-cls}-pagination {
     margin: 16px 24px;
   }
-
   &.@{list-prefix-cls}-sm {
     .@{list-prefix-cls}-item {
       padding-right: 16px;
@@ -8915,7 +8875,6 @@ form {
       }
     }
   }
-
   .@{list-prefix-cls}-vertical {
     .@{list-prefix-cls}-item {
       &-extra {
@@ -9070,9 +9029,9 @@ form {
   padding: 0;
   overflow: hidden;
   line-height: @line-height-base;
-
   white-space: pre-wrap;
-  vertical-align: bottom; // =================== Status ===================
+  vertical-align: bottom;
+  // =================== Status ===================
   &-disabled {
     > textarea {
       .disabled();
@@ -9199,7 +9158,6 @@ form {
     }
   }
 }
-
 @menu-prefix-cls: ~'@{ant-prefix}-menu';
 // default theme
 .@{menu-prefix-cls} {
@@ -9279,7 +9237,6 @@ form {
   &-horizontal &-submenu {
     margin-top: -1px;
   }
-
   &-horizontal > &-item:hover,
   &-horizontal > &-item-active,
   &-horizontal > &-submenu &-submenu-title:hover {
@@ -9459,7 +9416,6 @@ form {
     > .@{menu-prefix-cls}-submenu {
       position: relative;
       top: 1px;
-
       display: inline-block;
       vertical-align: bottom;
       border-bottom: 2px solid transparent;
@@ -9493,7 +9449,6 @@ form {
       content: '\20';
     }
   }
-
   &-vertical,
   &-vertical-left,
   &-vertical-right,
@@ -9616,7 +9571,6 @@ form {
     padding: 0;
     border: 0;
     border-radius: 0;
-
     box-shadow: none;
     & > .@{menu-prefix-cls}-item,
     & > .@{menu-prefix-cls}-submenu > .@{menu-prefix-cls}-submenu-title {
@@ -9670,7 +9624,6 @@ form {
   &-dark&-submenu-popup {
     background: transparent;
   }
-
   &-dark &-inline&-sub {
     background: @menu-dark-submenu-bg;
     box-shadow: 0 2px 8px fade(@black, 45%) inset;
@@ -9678,7 +9631,6 @@ form {
   &-dark&-horizontal {
     border-bottom: 0;
   }
-
   &-dark&-horizontal > &-item,
   &-dark&-horizontal > &-submenu {
     top: 0;
@@ -9868,13 +9820,10 @@ form {
     margin: 0;
     color: @heading-color;
     font-weight: 500;
-
     font-size: @font-size-lg;
-
     line-height: 22px;
     word-wrap: break-word;
   }
-
   &-content {
     position: relative;
     background-color: @component-background;
@@ -9942,12 +9891,10 @@ form {
   }
   &.zoom-enter,
   &.zoom-appear {
-    transform: none;
-    // reset scale avoid mousePosition bug
+    transform: none; // reset scale avoid mousePosition bug
     opacity: 0;
     animation-duration: @animation-duration-slow;
-    user-select: none;
-    // https://github.com/ant-design/ant-design/issues/11777
+    user-select: none; // https://github.com/ant-design/ant-design/issues/11777
   }
   &-mask {
     position: fixed;
@@ -10010,7 +9957,8 @@ form {
   }
   &-body {
     .@{confirm-prefix-cls}-title {
-      display: block; // create BFC to avoid // https://user-images.githubusercontent.com/507615/37702510-ba844e06-2d2d-11e8-9b67-8e19be57f445.png
+      display: block;
+      // create BFC to avoid // https://user-images.githubusercontent.com/507615/37702510-ba844e06-2d2d-11e8-9b67-8e19be57f445.png
       overflow: hidden;
       color: @heading-color;
       font-weight: 500;
@@ -10050,7 +9998,6 @@ form {
   &-info &-body > .@{iconfont-css-prefix} {
     color: @info-color;
   }
-
   &-success &-body > .@{iconfont-css-prefix} {
     color: @success-color;
   }
@@ -10123,10 +10070,7 @@ form {
       margin-left: 48px;
       font-size: @font-size-base;
     }
-    // Icon & color style in different selector level
-
-    // https://github.com/ant-design/ant-design/issues/16503
-    // https://github.com/ant-design/ant-design/issues/15512
+    // Icon & color style in different selector level // https://github.com/ant-design/ant-design/issues/16503 // https://github.com/ant-design/ant-design/issues/15512
     &-icon {
       position: absolute;
       margin-left: 4px;
@@ -10298,7 +10242,6 @@ form {
     padding-top: 16px;
     overflow: hidden;
   }
-
   &-footer {
     margin-top: 16px;
     .@{ant-prefix}-tabs-bar {
@@ -10749,6 +10692,7 @@ form {
       padding-left: @font-size-base + 8px;
     }
   }
+
   &-buttons {
     margin-bottom: 4px;
     text-align: right;
@@ -10934,6 +10878,7 @@ form {
       content: '';
     }
   }
+
   &-status-exception {
     .@{progress-prefix-cls}-bg {
       background-color: @error-color;
@@ -11023,7 +10968,6 @@ form {
   display: inline-block;
   margin-right: 8px;
   white-space: nowrap;
-
   cursor: pointer;
 }
 .@{radio-prefix-cls} {
@@ -11354,7 +11298,6 @@ span.@{radio-prefix-cls} + * {
       color: inherit;
     }
   }
-
   &-text {
     display: inline-block;
     margin-left: 8px;
@@ -11376,7 +11319,8 @@ span.@{radio-prefix-cls} + * {
   }
   &-warning &-icon > .anticon {
     color: @warning-color;
-  } // Exception Status image
+  }
+  // Exception Status image
   &-image {
     width: 250px;
     height: 295px;
@@ -11479,9 +11423,7 @@ span.@{radio-prefix-cls} + * {
     display: block;
     box-sizing: border-box;
     background-color: @component-background;
-    border: @border-width-base @border-style-base @select-border-color;
-    // strange align fix for chrome but works
-    // https://gw.alipayobjects.com/zos/rmsportal/VFTfKXJuogBAXcvfAUWJ.gif
+    border: @border-width-base @border-style-base @select-border-color; // strange align fix for chrome but works // https://gw.alipayobjects.com/zos/rmsportal/VFTfKXJuogBAXcvfAUWJ.gif
     border-top-width: @border-width-base + 0.02px;
     border-radius: @border-radius-base;
     outline: none;
@@ -11512,7 +11454,6 @@ span.@{radio-prefix-cls} + * {
   &-no-arrow &-selection-selected-value {
     padding-right: 0;
   }
-
   &-disabled {
     color: @disabled-color;
   }
@@ -11702,8 +11643,7 @@ span.@{radio-prefix-cls} + * {
     }
     > ul > li,
     .@{select-prefix-cls}-selection__rendered > ul > li {
-      height: @input-height-base - 8px;
-      // for tree-select
+      height: @input-height-base - 8px; // for tree-select
       margin-top: 3px;
       line-height: @input-height-base - 8px - 2px;
     }
@@ -11777,7 +11717,6 @@ span.@{radio-prefix-cls} + * {
     .@{select-prefix-cls}-search--inline {
       float: none;
       width: 100%;
-
       height: 100%;
     }
     .@{select-prefix-cls}-search__field__wrap {
@@ -12004,7 +11943,8 @@ span.@{radio-prefix-cls} + * {
         margin-top: 28px;
       }
     }
-  } // With active animation
+  }
+  // With active animation
   &.@{skeleton-prefix-cls}-active {
     & .@{skeleton-prefix-cls}-content {
       .@{skeleton-title-prefix-cls},
@@ -12242,7 +12182,6 @@ span.@{radio-prefix-cls} + * {
         top: 50%;
         width: 100%;
         padding-top: (@spin-dot-size - @font-size-base) / 2 + 2px;
-
         text-shadow: 0 1px 2px @shadow-color-inverse;
       }
       &.@{spin-prefix-cls}-show-text .@{spin-prefix-cls}-dot {
@@ -12308,12 +12247,10 @@ span.@{radio-prefix-cls} + * {
   &-tip {
     color: @spin-dot-default;
   }
-
   // dots
   // ------------------------------
   &-dot {
     position: relative;
-
     display: inline-block;
     font-size: @spin-dot-size;
     .square(1em);
@@ -12353,7 +12290,6 @@ span.@{radio-prefix-cls} + * {
       animation: antRotate 1.2s infinite linear;
     }
   }
-
   // Sizes
   // ------------------------------
   // small
@@ -12364,7 +12300,6 @@ span.@{radio-prefix-cls} + * {
       height: 6px;
     }
   }
-
   // large
   &-lg &-dot {
     font-size: @spin-dot-size-lg;
@@ -12512,7 +12447,6 @@ span.@{radio-prefix-cls} + * {
       content: '';
     }
   }
-
   &-title {
     position: relative;
     display: inline-block;
@@ -12919,7 +12853,6 @@ span.@{radio-prefix-cls} + * {
       }
       .@{steps-prefix-cls}-item-title {
         max-width: 100%;
-
         padding-right: 0;
         overflow: hidden;
         white-space: nowrap;
@@ -13032,6 +12965,7 @@ span.@{radio-prefix-cls} + * {
   line-height: @switch-height - 2px;
   vertical-align: middle;
   background-color: @disabled-color;
+
   border: 1px solid transparent;
   border-radius: 100px;
   cursor: pointer;
@@ -13067,9 +13001,7 @@ span.@{radio-prefix-cls} + * {
   &-loading-icon {
     z-index: 1;
     display: none;
-    font-size: 12px;
-    // loading default use animation
-    // animation: loadingCircle 1s infinite linear;
+    font-size: 12px; // loading default use animation // animation: loadingCircle 1s infinite linear;
     background: transparent;
     svg {
       position: absolute;
@@ -13127,7 +13059,8 @@ span.@{radio-prefix-cls} + * {
     margin-left: @switch-sm-checked-margin-left;
   }
   &-small&-loading &-loading-icon {
-    font-weight: bold; // animation: AntSwitchSmallLoadingCircle 1s infinite linear;
+    font-weight: bold;
+    // animation: AntSwitchSmallLoadingCircle 1s infinite linear;
     transform: scale(0.66667);
   }
   &-checked {
@@ -13186,8 +13119,7 @@ span.@{radio-prefix-cls} + * {
   }
   &-empty &-body {
     // https://github.com/ant-design/ant-design/issues/11135
-    overflow-x: auto !important;
-    // https://github.com/ant-design/ant-design/issues/17175
+    overflow-x: auto !important; // https://github.com/ant-design/ant-design/issues/17175
     overflow-y: hidden !important;
   }
   // https://github.com/ant-design/ant-design/issues/17611
@@ -13367,7 +13299,6 @@ span.@{radio-prefix-cls} + * {
         background: @table-row-hover-bg;
       }
     }
-
     &.@{table-prefix-cls}-row-selected > td {
       &.@{table-prefix-cls}-column-sort {
         background: @table-body-selected-sort-bg;
@@ -13461,7 +13392,6 @@ span.@{radio-prefix-cls} + * {
     overflow: hidden;
     background: @table-header-bg;
   }
-
   &-header table {
     border-radius: @table-border-radius-base @table-border-radius-base 0 0;
   }
@@ -13498,7 +13428,6 @@ span.@{radio-prefix-cls} + * {
     &.@{table-prefix-cls}-empty {
       .@{table-prefix-cls}-placeholder {
         border-right: @border-width-base @border-style-base @border-color-split;
-
         border-left: @border-width-base @border-style-base @border-color-split;
       }
     }
@@ -13550,8 +13479,7 @@ span.@{radio-prefix-cls} + * {
     .@{ant-prefix}-dropdown-menu {
       border: 0;
       border-radius: @border-radius-base @border-radius-base 0 0;
-      box-shadow: none;
-      // https://github.com/ant-design/ant-design/issues/4916
+      box-shadow: none; // https://github.com/ant-design/ant-design/issues/4916
       &-without-submenu {
         max-height: 400px;
         overflow-x: hidden;
@@ -13571,7 +13499,6 @@ span.@{radio-prefix-cls} + * {
         }
       }
     }
-
     .@{ant-prefix}-dropdown-menu-item {
       overflow: hidden;
     }
@@ -13614,7 +13541,6 @@ span.@{radio-prefix-cls} + * {
       color: @table-header-icon-color;
       transition: all 0.3s;
     }
-
     &-menu {
       min-width: 96px;
       margin-top: 5px;
@@ -13670,7 +13596,6 @@ span.@{radio-prefix-cls} + * {
       }
     }
   }
-
   tr&-expanded-row {
     &,
     &:hover {
@@ -13707,9 +13632,7 @@ span.@{radio-prefix-cls} + * {
   &-fixed-header &-scroll &-header {
     margin-bottom: -20px;
     padding-bottom: 20px;
-    overflow: scroll;
-    // Workaround for additional scroll bar on the table header
-    // https://github.com/ant-design/ant-design/issues/6515#issuecomment-419634369
+    overflow: scroll; // Workaround for additional scroll bar on the table header // https://github.com/ant-design/ant-design/issues/6515#issuecomment-419634369
     opacity: 0.9999;
     &::-webkit-scrollbar {
       border: 1px solid @border-color-split;
@@ -13717,9 +13640,7 @@ span.@{radio-prefix-cls} + * {
     }
   }
   &-hide-scrollbar {
-    // https://github.com/ant-design/ant-design/issues/4637
-    // https://stackoverflow.com/a/54101063
-    // https://github.com/react-component/table/pull/333
+    // https://github.com/ant-design/ant-design/issues/4637 // https://stackoverflow.com/a/54101063 // https://github.com/react-component/table/pull/333
     scrollbar-color: transparent transparent;
     &::-webkit-scrollbar {
       background-color: transparent;
@@ -13955,7 +13876,6 @@ span.@{radio-prefix-cls} + * {
       border-bottom: 0;
       border-left: 0;
     }
-
     .@{table-prefix-cls}-thead > tr:only-child > th:last-child,
     .@{table-prefix-cls}-tbody > tr > td:last-child {
       border-right: none;
@@ -14131,8 +14051,7 @@ span.@{radio-prefix-cls} + * {
         padding-left: 18px;
       }
     }
-  }
-  // https://github.com/ant-design/ant-design/issues/9104
+  } // https://github.com/ant-design/ant-design/issues/9104
   & &-card-bar&-bottom-bar &-tab {
     height: auto;
     border-top: 0;
@@ -14145,7 +14064,6 @@ span.@{radio-prefix-cls} + * {
     color: @primary-color;
   }
 }
-
 @tab-prefix-cls: ~'@{ant-prefix}-tabs';
 // Hidden content
 .tabs-hidden-content() {
@@ -14257,7 +14175,6 @@ span.@{radio-prefix-cls} + * {
       color: @disabled-color;
     }
   }
-
   &-tab-next {
     right: 2px;
   }
@@ -14664,7 +14581,6 @@ span.@{radio-prefix-cls} + * {
       margin-left: 0;
       border-left: 0;
     }
-
     &:last-child {
       border-right: 0;
     }
@@ -14672,8 +14588,7 @@ span.@{radio-prefix-cls} + * {
       width: 100%;
     }
     ul {
-      // use fixed width instead of 100%
-      // to fix strange render bug in safari: https://github.com/ant-design/ant-design/issues/17842
+      // use fixed width instead of 100% // to fix strange render bug in safari: https://github.com/ant-design/ant-design/issues/17842
       width: @time-picker-panel-column-width;
       margin: 0;
       padding: 0 0 @timepicker-item-height * 5;
@@ -14717,6 +14632,7 @@ span.@{radio-prefix-cls} + * {
   &-combobox {
     .clearfix;
   }
+
   &-addon {
     padding: 8px;
     border-top: @border-width-base @border-style-base @border-color-split;
@@ -14826,13 +14742,11 @@ span.@{radio-prefix-cls} + * {
     list-style: none;
     &-tail {
       position: absolute;
-
       top: 10px;
       left: 4px;
       height: calc(100% - 10px);
       border-left: @timeline-width solid @timeline-color;
     }
-
     &-pending &-head {
       font-size: @font-size-sm;
       background-color: transparent;
@@ -14874,7 +14788,6 @@ span.@{radio-prefix-cls} + * {
       padding: 3px 1px;
       line-height: 1;
       text-align: center;
-
       border: 0;
       border-radius: 0;
       transform: translate(-50%, -50%);
@@ -15040,12 +14953,10 @@ span.@{radio-prefix-cls} + * {
       transform: translateY(-@tooltip-arrow-rotate-width / 2) rotate(45deg);
     }
   }
-
   &-placement-top &-arrow {
     left: 50%;
     transform: translateX(-50%);
   }
-
   &-placement-topLeft &-arrow {
     left: @tooltip-arrow-offset-horizontal;
   }
@@ -15125,8 +15036,7 @@ span.@{radio-prefix-cls} + * {
     &-body {
       &-with-search {
         padding-top: 0;
-      }
-      // Search box in customize mode do not need fix top
+      } // Search box in customize mode do not need fix top
       &-search-wrapper {
         position: relative;
         padding-bottom: 0;
@@ -15135,7 +15045,8 @@ span.@{radio-prefix-cls} + * {
         padding: 12px;
       }
     }
-  } // =================== Hook Components ===================
+  }
+  // =================== Hook Components ===================
   .@{table-prefix-cls}-wrapper {
     .@{table-prefix-cls}-small {
       border: 0;
@@ -15452,8 +15363,7 @@ span.@{radio-prefix-cls} + * {
       line-height: @tree-title-height - 4px;
       border-top: 2px transparent solid;
       border-bottom: 2px transparent solid;
-      user-select: none;
-      /* Required to make elements draggable in old WebKit */
+      user-select: none; /* Required to make elements draggable in old WebKit */
       -khtml-user-drag: element;
       -webkit-user-drag: element;
     }
@@ -15645,7 +15555,8 @@ span.@{radio-prefix-cls} + * {
       left: 12px;
       width: 1px;
       height: 100%;
-      height: calc(100% - 22px); // Remove additional height if support
+      height: calc(100% - 22px);
+      // Remove additional height if support
       margin: 22px 0 0;
       border-left: 1px solid @border-color-base;
       content: ' ';
@@ -15680,7 +15591,6 @@ span.@{radio-prefix-cls} + * {
   .reset-component;
   margin: 0;
   margin-top: -4px;
-
   padding: 0 4px;
   li {
     margin: 8px 0;
@@ -15901,7 +15811,6 @@ span.@{radio-prefix-cls} + * {
   p {
     .typography-paragraph();
   }
-
   h1&,
   h1 {
     .typography-title-1();
@@ -15941,11 +15850,9 @@ span.@{radio-prefix-cls} + * {
       margin-top: @typography-title-margin-top;
     }
   }
-
   span&-ellipsis {
     display: inline-block;
   }
-
   a {
     .operation-unit();
     &:active,
@@ -15995,7 +15902,8 @@ span.@{radio-prefix-cls} + * {
     &:focus {
       color: @success-color;
     }
-  } // Text input area
+  }
+  // Text input area
   &-edit-content {
     position: relative;
     div& {
@@ -16068,7 +15976,6 @@ span.@{radio-prefix-cls} + * {
   &&-disabled {
     cursor: not-allowed;
   }
-
   &&-select-picture-card {
     display: table;
     float: left;
@@ -16325,7 +16232,6 @@ span.@{radio-prefix-cls} + * {
       position: relative;
       height: 100%;
       overflow: hidden;
-
       &::before {
         position: absolute;
         z-index: 1;
@@ -16340,7 +16246,6 @@ span.@{radio-prefix-cls} + * {
     .@{upload-item}:hover .@{upload-item}-info::before {
       opacity: 1;
     }
-
     .@{upload-item}-actions {
       position: absolute;
       top: 50%;
@@ -16355,7 +16260,6 @@ span.@{radio-prefix-cls} + * {
         z-index: 10;
         width: 16px;
         margin: 0 4px;
-
         color: @text-color-dark;
         font-size: 16px;
         cursor: pointer;
@@ -16485,12 +16389,13 @@ span.@{radio-prefix-cls} + * {
 @black: #000;
 // Color used by default to control hover and active backgrounds and for
 // alert info backgrounds.
-@primary-1: color(~`colorPalette('@{primary-color}', 1) `); // replace tint(@primary-color, 90%)
-
+@primary-1: color(~`colorPalette('@{primary-color}', 1) `);
+// replace tint(@primary-color, 90%)
 @primary-2: color(~`colorPalette('@{primary-color}', 2) `);
 // replace tint(@primary-color, 80%)
 @primary-3: color(~`colorPalette('@{primary-color}', 3) `); // unused
-@primary-4: color(~`colorPalette('@{primary-color}', 4) `); // unused
+@primary-4: color(~`colorPalette('@{primary-color}', 4) `);
+// unused
 @primary-5: color(~`colorPalette('@{primary-color}', 5) `);
 // color used to control the text color in many active and hover states, replace tint(@primary-color, 20%)
 @primary-6: @primary-color;
@@ -16539,7 +16444,6 @@ span.@{radio-prefix-cls} + * {
 @padding-sm: 12px; // Form controls and items
 @padding-xs: 8px; // small items
 // vertical padding for all form controls
-
 @control-padding-horizontal: @padding-sm;
 @control-padding-horizontal-sm: @padding-xs;
 // The background colors for active and hover states for things like
@@ -17053,7 +16957,6 @@ span.@{radio-prefix-cls} + * {
 @list-item-meta-margin-bottom: @padding-md;
 @list-item-meta-avatar-margin-right: @padding-md;
 @list-item-meta-title-margin-bottom: @padding-sm;
-
 // Statistic
 // ---
 @statistic-title-font-size: @font-size-base;
