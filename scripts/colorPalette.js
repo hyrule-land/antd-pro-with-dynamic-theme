@@ -1,13 +1,26 @@
-var hueStep = 2;
-var saturationStep = 16;
-var saturationStep2 = 5;
-var brightnessStep1 = 5;
-var brightnessStep2 = 15;
-var lightColorCount = 5;
-var darkColorCount = 4;
+/* File Info 
+ * Author:      qinhui 
+ * CreateTime:  12/20/2019, 1:54:51 AM 
+ * LastEditor:  qinhui 
+ * ModifyTime:  12/20/2019, 6:10:43 PM 
+ * Description: 
+*/ 
 
-var getHue = function(hsv, i, isLight) {
-  var hue;
+// TinyColor v2
+// https://github.com/bgrins/TinyColor
+const tinycolor = require("tinycolor2");
+
+const hueStep = 2;
+const saturationStep = 16;
+const saturationStep2 = 5;
+const brightnessStep1 = 5;
+const brightnessStep2 = 15;
+const lightColorCount = 5;
+const darkColorCount = 4;
+
+
+const getHue = function(hsv, i, isLight) {
+  let hue;
   if (hsv.h >= 60 && hsv.h <= 240) {
     hue = isLight ? hsv.h - hueStep * i : hsv.h + hueStep * i;
   } else {
@@ -20,8 +33,8 @@ var getHue = function(hsv, i, isLight) {
   }
   return Math.round(hue);
 };
-var getSaturation = function(hsv, i, isLight) {
-  var saturation;
+const getSaturation = function(hsv, i, isLight) {
+  let saturation;
   if (isLight) {
     saturation = Math.round(hsv.s * 100) - saturationStep * i;
   } else if (i === darkColorCount) {
@@ -40,17 +53,18 @@ var getSaturation = function(hsv, i, isLight) {
   }
   return Math.round(saturation);
 };
-var getValue = function(hsv, i, isLight) {
+
+const getValue = function(hsv, i, isLight) {
   if (isLight) {
     return Math.round(hsv.v * 100) + brightnessStep1 * i;
   }
   return Math.round(hsv.v * 100) - brightnessStep2 * i;
 };
 
-colorPalette = function(color, index) {
-  var isLight = index <= 6;
-  var hsv = tinycolor(color).toHsv();
-  var i = isLight ? lightColorCount + 1 - index : index - lightColorCount - 1;
+const colorPalette = function(color, index) {
+  const isLight = index <= 6;
+  const hsv = tinycolor(color).toHsv();
+  const i = isLight ? lightColorCount + 1 - index : index - lightColorCount - 1;
   return tinycolor({
     h: getHue(hsv, i, isLight),
     s: getSaturation(hsv, i, isLight),
@@ -58,4 +72,16 @@ colorPalette = function(color, index) {
   }).toHexString();
 };
 
-console.log(colorPalette('#ff00ff', 8))
+// const baseColor = '#2f54eb';
+// console.log(colorPalette('baseColor', 1));
+// console.log(colorPalette('baseColor', 2));
+// console.log(colorPalette('baseColor', 3));
+// console.log(colorPalette('baseColor', 4));
+// console.log(colorPalette('baseColor', 5));
+// console.log(colorPalette('baseColor', 6));
+// console.log(colorPalette('baseColor', 7));
+// console.log(colorPalette('baseColor', 8));
+// console.log(colorPalette('baseColor', 9));
+// console.log(colorPalette('baseColor', 10));
+
+export default colorPalette;

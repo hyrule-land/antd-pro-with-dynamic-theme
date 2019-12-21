@@ -7,6 +7,7 @@ export default {
   'menu.register': '注册',
   'menu.register.result': '注册结果',
   'menu.demo': 'demo',
+  'menu.preview': '预览页',
   'menu.dashboard': 'Dashboard',
   'menu.dashboard.analysis': '分析页',
   'menu.dashboard.monitor': '监控页',

@@ -1,0 +1,88 @@
+const primaryColors = [
+  {
+    key: 'red',
+    name: 'dust red',
+    cnName: '薄雾',
+    desc: '斗志、奔放',
+    color: '#f5222d',
+  },
+  {
+    key: 'volcano',
+    name: 'volcano',
+    cnName: '火山',
+    desc: '醒目、澎湃',
+    color: '#fa541c',
+  },
+  {
+    key: 'orange',
+    name: 'sunset orange',
+    cnName: '日暮',
+    desc: '温暖、欢快',
+    color: '#fa8c16',
+  },
+  {
+    key: 'gold',
+    name: 'calendula gold',
+    cnName: '金盏花',
+    desc: '活力、积极',
+    color: '#faad14',
+  },
+  {
+    key: 'yellow',
+    name: 'sunrise yellow',
+    cnName: '日出',
+    desc: '出生、阳光',
+    color: '#fadb14',
+  },
+  {
+    key: 'lime',
+    name: 'lime',
+    cnName: '青柠',
+    desc: '自然、生机',
+    color: '#a0d911',
+  },
+  {
+    key: 'green',
+    name: 'polar green',
+    cnName: '极光绿',
+    desc: '健康、创新',
+    color: '#52c41a',
+  },
+  {
+    key: 'cyan',
+    name: 'cyan',
+    cnName: '明青',
+    desc: '希望、坚强',
+    color: '#13c2c2',
+  },
+  {
+    key: 'blue',
+    name: 'daybreak blue',
+    cnName: '拂晓蓝',
+    desc: '包容、科技、普惠',
+    color: '#1890ff',
+  },
+  {
+    key: 'geekblue',
+    name: 'geek blue',
+    cnName: '极客蓝',
+    desc: '探索、钻研',
+    color: '#2f54eb',
+  },
+  {
+    key: 'purple',
+    name: 'golden purple',
+    cnName: '酱紫',
+    desc: '优雅、浪漫',
+    color: '#722ed1',
+  },
+  {
+    key: 'magenta',
+    name: 'magenta',
+    cnName: '法式洋红',
+    desc: '明快、感性',
+    color: '#eb2f96',
+  },
+];
+
+export default primaryColors;

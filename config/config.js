@@ -110,6 +110,12 @@ export default {
               component: './demo/',
             },
             {
+              path: '/preview',
+              name: 'preview',
+              icon: 'smile',
+              component: './preview/',
+            },
+            {
               path: '/admin',
               name: 'admin',
               icon: 'crown',
