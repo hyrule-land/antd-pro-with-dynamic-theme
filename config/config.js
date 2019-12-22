@@ -116,6 +116,12 @@ export default {
               component: './preview/',
             },
             {
+              path: '/themeEdit',
+              name: 'themeEdit',
+              icon: 'smile',
+              component: './themeEdit/',
+            },
+            {
               path: '/admin',
               name: 'admin',
               icon: 'crown',
