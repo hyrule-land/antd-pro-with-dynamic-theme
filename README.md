@@ -4,6 +4,7 @@
 - 提供几个便捷的脚本，处理 less 和 json 的转换的问题
 - 配置几套自己的主题
 - 还需要考虑好主题跟 layout 之间的搭配，后续会深入研究各种形式下的 layout，以及自己开发 layout
+- 第一阶段先把功能开发完成，后续会用 react hook 和 typescript 改写，同时会发布成 npm 的包
 
 
 # Ant Design Pro
