@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'antd';
-import Preview from '../preview/'
+import Demo from '@/pages/demo';
+import Preview from '../preview'
 
 
 
@@ -10,7 +11,7 @@ class ThemeEdit extends Component {
     return (
       <Row gutter="24">
         <Col span={12}>
-          主题配置
+          <Demo />
         </Col>
 
         <Col span={12}>
