@@ -34,6 +34,6 @@ rl.on('close', () => {
   //   fs.writeFileSync('./src/vars.json', JSON.stringify(vars, null, 2), 'utf8');
   // });
 
-  fs.writeFileSync('./src/vars.json', JSON.stringify(varsObj, null, 2), 'utf8');
+  fs.writeFileSync('./theme/defaultTheme.json', JSON.stringify(varsObj, null, 2), 'utf8');
 });
 
