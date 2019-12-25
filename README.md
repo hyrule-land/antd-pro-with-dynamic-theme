@@ -1,3 +1,6 @@
+# 目标
+做这个项目的目标是要将 antd design 的主题配置和 antd + umi + dva 的生态结合起来，供前端人员和设计师用
+
 # TODO
 - 将default.less的变量抽取出来，显示在界面上，方便拷贝
 - 需要做好跟 antd 版本同步的功能，以及版本升级的细节
@@ -5,62 +8,5 @@
 - 配置几套自己的主题
 - 还需要考虑好主题跟 layout 之间的搭配，后续会深入研究各种形式下的 layout，以及自己开发 layout
 - 第一阶段先把功能开发完成，后续会用 react hook 和 typescript 改写，同时会发布成 npm 的包
+- antd 的变量太多了，对设计师来说其实不太友好，而且很多变量之间有互相引用关系，其实用不到所有的变量，需要抽取一份精简的配置
 
-
-# Ant Design Pro
-
-This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
-
-## Environment Prepare
-
-Install `node_modules`:
-
-```bash
-npm install
-```
-
-or
-
-```bash
-yarn
-```
-
-## Provided Scripts
-
-Ant Design Pro provides some useful script to help you quick start and build with web project, code style check and test.
-
-Scripts provided in `package.json`. It's safe to modify or add additional script:
-
-### Start project
-
-```bash
-npm start
-```
-
-### Build project
-
-```bash
-npm run build
-```
-
-### Check code style
-
-```bash
-npm run lint
-```
-
-You can also use script to auto fix some lint error:
-
-```bash
-npm run lint:fix
-```
-
-### Test code
-
-```bash
-npm test
-```
-
-## More
-
-You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
