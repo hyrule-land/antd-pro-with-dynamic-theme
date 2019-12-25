@@ -5,6 +5,7 @@
 - 配置几套自己的主题
 - 还需要考虑好主题跟 layout 之间的搭配，后续会深入研究各种形式下的 layout，以及自己开发 layout
 - 第一阶段先把功能开发完成，后续会用 react hook 和 typescript 改写，同时会发布成 npm 的包
+- 拾色器需支持透明度，拾色器中提供拾色器类型切换的 下拉 或者 tab
 
 
 # Ant Design Pro

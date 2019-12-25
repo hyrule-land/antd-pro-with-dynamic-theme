@@ -49,6 +49,7 @@ class ColorPicker extends Component {
 
     const picker = (
       <Picker
+        {...this.props}
         color={color}
         onChange={this.handleChange}
         onChangeComplete={this.handleChangeComplete}

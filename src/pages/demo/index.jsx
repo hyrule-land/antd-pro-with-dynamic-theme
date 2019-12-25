@@ -49,6 +49,20 @@ class Demo extends Component {
           color="blue"
           onChange={this.onColorPickerChange}
           onChangeComplete={this.onChangeComplete}
+          presetColors={[
+            '#F5222D',
+            '#FA541C',
+            '#FA8C16',
+            '#FAAD14',
+            '#FADB14',
+            '#A0D911',
+            '#52C41A',
+            '#13C2C2',
+            '#1890FF',
+            '#2F54EB',
+            '#722ED1',
+            '#EB2F96'
+          ]}
         />
 
         <ColorPicker
